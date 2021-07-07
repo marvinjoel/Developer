@@ -1,9 +1,7 @@
-from distutils.command.upload import upload
-
 from django.db import models
 
+# Create your models here.
 
-# TODO: Poner los link, campo no obligatorio
 class DetailsModel(models.Model):
     email = models.EmailField(verbose_name='Email', max_length=300, blank= True, null=True)
     repo = models.CharField(verbose_name='Repositorio', max_length=500, blank= True, null=True)
